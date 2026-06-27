@@ -1,71 +1,50 @@
-export const USERS = [
-  { id: 'alice', name: 'Alice', initials: 'AL', color: '#E1F5EE', textColor: '#0F6E56' },
-  { id: 'bob',   name: 'Bob',   initials: 'BO', color: '#FBEAF0', textColor: '#993556' },
-  { id: 'carol', name: 'Carol', initials: 'CA', color: '#FAECE7', textColor: '#993C1D' },
-  { id: 'dave',  name: 'Dave',  initials: 'DA', color: '#E6F1FB', textColor: '#185FA5' },
+export const ROOMS = [
+  { id: 'general', name: 'general', icon: 'ti-hash' },
+  { id: 'random',  name: 'random',  icon: 'ti-hash' },
+  { id: 'tech',    name: 'tech',    icon: 'ti-code' },
+  { id: 'design',  name: 'design',  icon: 'ti-palette' },
 ];
 
-export const CHANNELS = [
-  { id: 'general', name: 'general',  icon: 'ti-hash' },
-  { id: 'random',  name: 'random',   icon: 'ti-hash' },
-  { id: 'dev',     name: 'dev-talk', icon: 'ti-code' },
-  { id: 'design',  name: 'design',   icon: 'ti-palette' },
+export const AVATAR_COLORS = [
+  '#E1F5EE', '#FBEAF0', '#FAECE7', '#E6F1FB',
+  '#FFF3E0', '#F3E5F5', '#E8F5E9', '#FFF8E1',
+  '#E0F7FA', '#FCE4EC',
 ];
 
-export const SAMPLE_MESSAGES = {
-  general: [
-    { id: 1, user: 'alice', text: 'Good morning everyone! 👋', time: Date.now() - 600000 },
-    { id: 2, user: 'bob',   text: 'Morning Alice! Ready for the standup?', time: Date.now() - 560000 },
-    { id: 3, user: 'carol', text: 'Just joined. What are we covering today?', time: Date.now() - 540000 },
-    { id: 4, user: 'alice', text: 'Mainly the new feature rollout and some perf issues we spotted yesterday.', time: Date.now() - 510000 },
-    { id: 5, user: 'dave',  text: 'I can share the perf dashboard during the call. Found some interesting patterns.', time: Date.now() - 480000 },
-    { id: 6, user: 'bob',   text: "Sounds great, let's do it!", time: Date.now() - 460000 },
-  ],
-  random: [
-    { id: 1, user: 'carol', text: 'Anyone tried that new coffee place downtown?', time: Date.now() - 900000 },
-    { id: 2, user: 'dave',  text: 'Yes! Their cold brew is incredible ☕', time: Date.now() - 880000 },
-    { id: 3, user: 'alice', text: 'Adding it to my list!', time: Date.now() - 850000 },
-  ],
-  dev: [
-    { id: 1, user: 'dave', text: 'Just pushed the new branch. Ready for review.', time: Date.now() - 1200000 },
-    { id: 2, user: 'bob',  text: "On it. I'll take a look this afternoon.", time: Date.now() - 1180000 },
-  ],
-  design: [
-    { id: 1, user: 'alice', text: 'Figma file updated with new components', time: Date.now() - 3600000 },
-    { id: 2, user: 'carol', text: 'Love the new icon set! 🎨', time: Date.now() - 3580000 },
-  ],
+export const AVATAR_TEXT_COLORS = {
+  '#E1F5EE': '#0F6E56',
+  '#FBEAF0': '#993556',
+  '#FAECE7': '#993C1D',
+  '#E6F1FB': '#185FA5',
+  '#FFF3E0': '#E65100',
+  '#F3E5F5': '#6A1B9A',
+  '#E8F5E9': '#2E7D32',
+  '#FFF8E1': '#F57F17',
+  '#E0F7FA': '#00695C',
+  '#FCE4EC': '#AD1457',
+  '#B0BEC5': '#37474F',
 };
 
-export const BOT_REPLIES = {
-  general: [
-    "That's a great point!",
-    'Totally agree with that.',
-    'Let me check and get back to you shortly.',
-    'Thanks for the heads up!',
-    'Can we sync on this after the call?',
-    'Just updated the doc. Have a look when you can.',
-    'Done! Pushed the fix 🚀',
-    'Looks good to me 👍',
-  ],
-  random: [
-    'Haha, same here!',
-    "Weekend can't come soon enough 😄",
-    "That's hilarious 😂",
-    'Sounds like fun!',
-  ],
-  dev: [
-    'PRs are looking clean.',
-    'Just ran the tests — all passing ✅',
-    'We might want to refactor that part.',
-    'Left some comments on the PR.',
-  ],
-  design: [
-    'Colors are 🔥',
-    'Love the new direction.',
-    'Can we try a slightly darker shade?',
-    'Sharing for review in 5.',
-  ],
-};
+export const FLOWBOT_RESPONSES = [
+  "Hey! Nice to hear from you 👋",
+  "Interesting point! Tell me more.",
+  "Ha, I was just thinking the same thing.",
+  "That's a great question — I'm still figuring that out 😄",
+  "You can open another tab to chat with a real 'person'!",
+  "I'm just a bot, but I'm a pretty good listener 🤖",
+  "Tell me something interesting!",
+  "I appreciate the conversation 🙏",
+  "That's one way to look at it!",
+  "Hmm, let me think about that... 🤔",
+  "You make a good point there.",
+  "I wish I had a better answer for that!",
+  "Sounds like you've been busy!",
+  "Keep going, I'm all ears (well, all code) 👀",
+  "Now that's what I call a hot take 🔥",
+  "I couldn't agree more!",
+  "Fascinating! Tell me more about that.",
+];
+
+export const REACTION_EMOJIS = ['👍', '❤️', '😂', '😮', '😢', '🔥'];
 
 export const EMOJIS = ['😊', '👋', '🔥', '👍', '❤️', '😂', '🚀', '✅', '💡', '🎉'];
-export const REACTION_EMOJIS = ['👍', '❤️', '😂', '😮', '🔥', '🎉'];
